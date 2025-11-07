@@ -9,19 +9,32 @@ const pixelifySans = Pixelify_Sans({
 export default function Home() {
   return (
     <>
-      <main>
-        <div
+      <div
+        style={{
+          width: "100vw",
+          height: "100vh",
+          backgroundImage: "url('/images/bg_with_no_tree.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <Image
+          src="/images/tree_animation2.gif"
+          alt="Animated Tree"
+          width={1000}
+          height={1000}
           style={{
-            width: "100vw",
-            height: "100vh",
-            backgroundImage: "url('/bg.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat"
+            position: "absolute",
+            width: "50vw",  
+            height: "50vw",
+            left: '5.5vw',
+            bottom: '-2.5vh',
+            zIndex: 10,
+            pointerEvents: "none",
           }}
-        ></div>
-      </main>
-
+        />
+      </div>
 
       {/* <div className="brand-row">
         <Image
